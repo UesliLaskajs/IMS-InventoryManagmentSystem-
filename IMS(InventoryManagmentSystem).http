@@ -1,0 +1,6 @@
+@IMS_InventoryManagmentSystem__HostAddress = http://localhost:5017
+
+GET {{IMS_InventoryManagmentSystem__HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
