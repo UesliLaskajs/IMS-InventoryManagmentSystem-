@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "EBtfIXo3Noj+1e65OGE1tdoYiLv747bImrxKCaMtF9A=",
+  "Source": "IMS(InventoryManagmentSystem)",
+  "BasePath": "_content/IMS(InventoryManagmentSystem)",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

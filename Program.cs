@@ -1,4 +1,7 @@
 
+using IMS_InventoryManagmentSystem_.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace IMS_InventoryManagmentSystem_
 {
     public class Program
@@ -10,10 +13,12 @@ namespace IMS_InventoryManagmentSystem_
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OgpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            // Learn more about configuring Swaggser/OgpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
