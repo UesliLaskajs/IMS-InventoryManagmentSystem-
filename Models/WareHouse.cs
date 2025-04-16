@@ -4,8 +4,8 @@
     {
         public int Id { get; set; }
 
-        public string Name { get; set; }
-        public string Location { get; set; }
+        public required string Name { get; set; }
+        public required string Location { get; set; } 
 
     }
 }

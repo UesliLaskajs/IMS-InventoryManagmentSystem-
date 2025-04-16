@@ -6,7 +6,7 @@ namespace IMS_InventoryManagmentSystem_.Repositories.InterfaceRepo
     {
 
         Task<User> GetUserByIdAsync(int userId);
-        Task<IEnumerable<User>> GetAllUsersAsync(User user);
+        Task<IEnumerable<User>> GetAllUsersAsync();
         Task AddUserAsync(User user);
         Task UpdateUserAsync(User user);
         Task RemoveUserAsync(int userId);

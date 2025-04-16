@@ -1,6 +1,8 @@
 
 using IMS_InventoryManagmentSystem_.Data;
+using IMS_InventoryManagmentSystem_.Middleware;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace IMS_InventoryManagmentSystem_
 {
@@ -11,6 +13,13 @@ namespace IMS_InventoryManagmentSystem_
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            Log.Logger = new LoggerConfiguration()
+             .MinimumLevel.Information()
+             .WriteTo.Console()
+             .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day)
+             .Enrich.FromLogContext()
+             .CreateLogger();
+            builder.Host.UseSerilog();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swaggser/OgpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -19,6 +28,7 @@ namespace IMS_InventoryManagmentSystem_
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -28,6 +38,7 @@ namespace IMS_InventoryManagmentSystem_
                 app.UseSwaggerUI();
             }
 
+            app.UseMiddleware<GlobalExceptionHandler>();
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
