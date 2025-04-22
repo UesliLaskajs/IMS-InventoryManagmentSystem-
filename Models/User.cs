@@ -4,10 +4,9 @@
     {
         public int Id { get; set; }
 
-        public required string UserName { get; set; }=string.Empty;
+        public  string UserName { get; set; }=string.Empty;
         public required string Email { get; set; }=string.Empty;
 
-        public required string Password { get; set; }
 
         public string PasswordHash { get; set; }=string.Empty ;
 

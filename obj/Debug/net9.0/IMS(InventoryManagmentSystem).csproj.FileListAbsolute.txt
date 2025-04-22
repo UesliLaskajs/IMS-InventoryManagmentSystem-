@@ -1,0 +1,8 @@
+C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\obj\Debug\net9.0\IMS(InventoryManagmentSystem).csproj.AssemblyReference.cache
+C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\obj\Debug\net9.0\IMS(InventoryManagmentSystem).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\obj\Debug\net9.0\IMS(InventoryManagmentSystem).AssemblyInfoInputs.cache
+C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\obj\Debug\net9.0\IMS(InventoryManagmentSystem).AssemblyInfo.cs
+C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\obj\Debug\net9.0\IMS(InventoryManagmentSystem).csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\obj\Debug\net9.0\IMS(InventoryManagmentSystem).MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\obj\Debug\net9.0\IMS(InventoryManagmentSystem).MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\obj\Debug\net9.0\IMS(InventoryManagmentSystem).sourcelink.json

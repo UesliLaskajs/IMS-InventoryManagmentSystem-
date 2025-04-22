@@ -4,6 +4,7 @@ using IMS_InventoryManagmentSystem_.Repositories.InterfaceRepo;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using System.Linq;
 
 namespace IMS_InventoryManagmentSystem_.Repositories
 {
@@ -28,9 +29,9 @@ namespace IMS_InventoryManagmentSystem_.Repositories
             return  await _dbContext.User.ToListAsync();
         }
 
-        public async Task<User> GetUserByIdAsync(int userId)
+        public async Task<User> GetUserAsync(string username)
         {
-            return await _dbContext.User.FindAsync(userId);
+            return await _dbContext.User.FirstOrDefaultAsync(u => u.UserName == username);
         }
 
         public async Task RemoveUserAsync(int userId)
@@ -46,6 +47,11 @@ namespace IMS_InventoryManagmentSystem_.Repositories
                 Log.Error("User is Not Found");
             }
 
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _dbContext.SaveChangesAsync();
         }
 
         public async  Task UpdateUserAsync(User user)
