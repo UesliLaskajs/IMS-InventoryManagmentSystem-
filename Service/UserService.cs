@@ -64,7 +64,7 @@ namespace IMS_InventoryManagmentSystem_.Service
             {
                 return new UnauthorizedObjectResult(new { Message = "Invalid email or password." });
             }
-            var token = CreateToken();
+            var token = CreateToken(user);
             return new OkObjectResult(new { token = token });
         }
 
@@ -77,7 +77,7 @@ namespace IMS_InventoryManagmentSystem_.Service
                 new Claim(ClaimTypes.Role,user.Role)
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["AppSettings:SecretKey"]);
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["AppSettings:SecretKey"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512);
 
             var tokenDescriptor = new JwtSecurityToken(

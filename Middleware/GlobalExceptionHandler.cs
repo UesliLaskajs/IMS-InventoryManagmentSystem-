@@ -27,12 +27,21 @@ namespace IMS_InventoryManagmentSystem_.Middleware
             }
 
         }
-        private async Task HandleExceptionAsync(HttpContext http,Exception ex)
+        private async Task HandleExceptionAsync(HttpContext http, Exception ex)
         {
             http.Response.StatusCode = 500;
             http.Response.ContentType = "application/json";
 
-            await http.Response.WriteAsJsonAsync(ex);
+            var errorResponse = new
+            {
+                Message = ex.Message,
+                StackTrace = ex.StackTrace,
+                Source = ex.Source,
+                InnerException = ex.InnerException?.Message,
+                Path = http.Request.Path
+            };
+
+            await http.Response.WriteAsJsonAsync(errorResponse);
         }
     }
 

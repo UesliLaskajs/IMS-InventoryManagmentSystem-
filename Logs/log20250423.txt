@@ -1,0 +1,219 @@
+2025-04-23 22:12:03.657 +02:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-23 22:12:18.349 +02:00 [INF] Now listening on: https://localhost:7038
+2025-04-23 22:12:18.352 +02:00 [INF] Now listening on: http://localhost:5017
+2025-04-23 22:12:19.167 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-23 22:12:19.169 +02:00 [INF] Hosting environment: Development
+2025-04-23 22:12:19.170 +02:00 [INF] Content root path: C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)
+2025-04-23 22:12:25.221 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger - null null
+2025-04-23 22:12:32.167 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger - 301 0 null 7259.4062ms
+2025-04-23 22:12:32.173 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/index.html - null null
+2025-04-23 22:12:32.396 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/index.html - 200 null text/html;charset=utf-8 222.5667ms
+2025-04-23 22:12:32.439 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/swagger-ui.css - null null
+2025-04-23 22:12:32.440 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-23 22:12:32.440 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/swagger-ui-bundle.js - null null
+2025-04-23 22:12:32.440 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-23 22:12:32.452 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-04-23 22:12:32.544 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 103.8657ms
+2025-04-23 22:12:32.605 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-23 22:12:32.605 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-23 22:12:32.608 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/swagger-ui.css - 200 152034 text/css 168.1453ms
+2025-04-23 22:12:32.610 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 170.1705ms
+2025-04-23 22:12:32.636 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_vs/browserLink - 200 null text/javascript; charset=UTF-8 183.5268ms
+2025-04-23 22:12:32.785 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-23 22:12:32.787 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 346.8967ms
+2025-04-23 22:12:33.052 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - null null
+2025-04-23 22:12:33.090 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.7055ms
+2025-04-23 22:12:33.121 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/favicon-32x32.png - null null
+2025-04-23 22:12:33.124 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-23 22:12:33.126 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/favicon-32x32.png - 200 628 image/png 5.2111ms
+2025-04-23 22:13:12.748 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7038/api/auth/register?UserName=ueslilaska&Email=uesli.laska%40gmail.com&Password=uesli123 - null 0
+2025-04-23 22:13:12.764 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem))'
+2025-04-23 22:13:12.799 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IMS_InventoryManagmentSystem_.Models.DTO.UserDTO]] Register(IMS_InventoryManagmentSystem_.Models.DTO.RegisterDTO) on controller IMS_InventoryManagmentSystem_.Controllers.AuthController (IMS(InventoryManagmentSystem)).
+2025-04-23 22:13:12.810 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem)) in 4.6013ms
+2025-04-23 22:13:12.813 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem))'
+2025-04-23 22:13:12.897 +02:00 [ERR] An Unhandled Error Ocurred.
+System.InvalidOperationException: Unable to resolve service for type 'IMS_InventoryManagmentSystem_.Service.IService.IUserService' while attempting to activate 'IMS_InventoryManagmentSystem_.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at IMS_InventoryManagmentSystem_.Middleware.GlobalExceptionHandler.Invoke(HttpContext httpContext) in C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\Middleware\GlobalExceptionHandler.cs:line 20
+2025-04-23 22:13:13.190 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported. Path: $.TargetSite.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, Exception innerException)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsyncSlow[TValue](PipeWriter body, TValue value, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at IMS_InventoryManagmentSystem_.Middleware.GlobalExceptionHandler.HandleExceptionAsync(HttpContext http, Exception ex) in C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\Middleware\GlobalExceptionHandler.cs:line 35
+   at IMS_InventoryManagmentSystem_.Middleware.GlobalExceptionHandler.Invoke(HttpContext httpContext) in C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\Middleware\GlobalExceptionHandler.cs:line 26
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-23 22:15:48.807 +02:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-23 22:15:49.227 +02:00 [INF] Now listening on: https://localhost:7038
+2025-04-23 22:15:49.230 +02:00 [INF] Now listening on: http://localhost:5017
+2025-04-23 22:15:49.539 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-23 22:15:49.542 +02:00 [INF] Hosting environment: Development
+2025-04-23 22:15:49.545 +02:00 [INF] Content root path: C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)
+2025-04-23 22:15:49.991 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/index.html - null null
+2025-04-23 22:15:50.276 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/index.html - 200 null text/html;charset=utf-8 291.5937ms
+2025-04-23 22:15:50.298 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-23 22:15:50.332 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 33.2633ms
+2025-04-23 22:15:50.352 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-04-23 22:15:50.407 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.0832ms
+2025-04-23 22:15:50.646 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - null null
+2025-04-23 22:15:50.668 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.6262ms
+2025-04-23 22:17:41.514 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7038/api/auth/register?Id=1&UserName=UesliLaska&Email=uesli.laska%40gmail.com&Password=uesli - null 0
+2025-04-23 22:17:41.533 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem))'
+2025-04-23 22:17:41.560 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IMS_InventoryManagmentSystem_.Models.DTO.UserDTO]] Register(IMS_InventoryManagmentSystem_.Models.DTO.RegisterDTO) on controller IMS_InventoryManagmentSystem_.Controllers.AuthController (IMS(InventoryManagmentSystem)).
+2025-04-23 22:17:41.568 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem)) in 2.2882ms
+2025-04-23 22:17:41.570 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem))'
+2025-04-23 22:17:41.637 +02:00 [ERR] An Unhandled Error Ocurred.
+System.InvalidOperationException: Unable to resolve service for type 'IMS_InventoryManagmentSystem_.Service.IService.IUserService' while attempting to activate 'IMS_InventoryManagmentSystem_.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at IMS_InventoryManagmentSystem_.Middleware.GlobalExceptionHandler.Invoke(HttpContext httpContext) in C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\Middleware\GlobalExceptionHandler.cs:line 20
+2025-04-23 22:17:41.922 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported. Path: $.TargetSite.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, Exception innerException)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsyncSlow[TValue](PipeWriter body, TValue value, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at IMS_InventoryManagmentSystem_.Middleware.GlobalExceptionHandler.HandleExceptionAsync(HttpContext http, Exception ex) in C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\Middleware\GlobalExceptionHandler.cs:line 35
+   at IMS_InventoryManagmentSystem_.Middleware.GlobalExceptionHandler.Invoke(HttpContext httpContext) in C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\Middleware\GlobalExceptionHandler.cs:line 26
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-23 22:20:55.231 +02:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-23 22:20:55.632 +02:00 [INF] Now listening on: https://localhost:7038
+2025-04-23 22:20:55.634 +02:00 [INF] Now listening on: http://localhost:5017
+2025-04-23 22:20:55.758 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-23 22:20:55.760 +02:00 [INF] Hosting environment: Development
+2025-04-23 22:20:55.761 +02:00 [INF] Content root path: C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)
+2025-04-23 22:20:56.455 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/index.html - null null
+2025-04-23 22:20:56.770 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/index.html - 200 null text/html;charset=utf-8 322.6577ms
+2025-04-23 22:20:56.817 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-23 22:20:56.830 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-04-23 22:20:56.832 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 14.4423ms
+2025-04-23 22:20:56.872 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.3329ms
+2025-04-23 22:20:57.040 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - null null
+2025-04-23 22:20:57.061 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.1322ms
+2025-04-23 22:21:19.149 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7038/api/auth/register?UserName=Uesli&Email=Uesli.laska%40gmail.com&Password=Uesliislaska123 - null 0
+2025-04-23 22:21:19.178 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem))'
+2025-04-23 22:21:19.204 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IMS_InventoryManagmentSystem_.Models.DTO.UserDTO]] Register(IMS_InventoryManagmentSystem_.Models.DTO.RegisterDTO) on controller IMS_InventoryManagmentSystem_.Controllers.AuthController (IMS(InventoryManagmentSystem)).
+2025-04-23 22:21:19.213 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem)) in 2.3924ms
+2025-04-23 22:21:19.216 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem))'
+2025-04-23 22:21:19.276 +02:00 [ERR] An Unhandled Error Ocurred.
+System.InvalidOperationException: Unable to resolve service for type 'IMS_InventoryManagmentSystem_.Service.IService.IUserService' while attempting to activate 'IMS_InventoryManagmentSystem_.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at IMS_InventoryManagmentSystem_.Middleware.GlobalExceptionHandler.Invoke(HttpContext httpContext) in C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\Middleware\GlobalExceptionHandler.cs:line 20
+2025-04-23 22:21:19.466 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported. Path: $.TargetSite.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, Exception innerException)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsyncSlow[TValue](PipeWriter body, TValue value, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at IMS_InventoryManagmentSystem_.Middleware.GlobalExceptionHandler.HandleExceptionAsync(HttpContext http, Exception ex) in C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\Middleware\GlobalExceptionHandler.cs:line 35
+   at IMS_InventoryManagmentSystem_.Middleware.GlobalExceptionHandler.Invoke(HttpContext httpContext) in C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\Middleware\GlobalExceptionHandler.cs:line 26
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-23 22:21:22.900 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7038/api/auth/register?UserName=Uesli&Email=Uesli.laska%40gmail.com&Password=Uesliislaska123 - 500 null text/plain; charset=utf-8 3751.3942ms
+2025-04-23 22:23:52.007 +02:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-23 22:23:52.326 +02:00 [INF] Now listening on: https://localhost:7038
+2025-04-23 22:23:52.329 +02:00 [INF] Now listening on: http://localhost:5017
+2025-04-23 22:23:52.566 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-23 22:23:52.568 +02:00 [INF] Hosting environment: Development
+2025-04-23 22:23:52.570 +02:00 [INF] Content root path: C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)
+2025-04-23 22:23:53.213 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/index.html - null null
+2025-04-23 22:23:53.654 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/index.html - 200 null text/html;charset=utf-8 452.8482ms
+2025-04-23 22:23:53.815 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-04-23 22:23:53.815 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-23 22:23:53.841 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 26.488ms
+2025-04-23 22:23:53.880 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.1172ms
+2025-04-23 22:23:54.006 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - null null
+2025-04-23 22:23:54.031 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.4436ms
+2025-04-23 22:24:22.181 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7038/api/auth/register?UserName=UesliLaska&Email=uesli.laska%40gmail.com&Password=Uesliislaska123 - null 0
+2025-04-23 22:24:22.200 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem))'
+2025-04-23 22:24:22.230 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IMS_InventoryManagmentSystem_.Models.DTO.UserDTO]] Register(IMS_InventoryManagmentSystem_.Models.DTO.RegisterDTO) on controller IMS_InventoryManagmentSystem_.Controllers.AuthController (IMS(InventoryManagmentSystem)).
+2025-04-23 22:24:22.239 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem)) in 2.373ms
+2025-04-23 22:24:22.241 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem))'
+2025-04-23 22:24:22.299 +02:00 [ERR] An Unhandled Error Ocurred.
+System.InvalidOperationException: Unable to resolve service for type 'IMS_InventoryManagmentSystem_.Service.IService.IUserService' while attempting to activate 'IMS_InventoryManagmentSystem_.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at IMS_InventoryManagmentSystem_.Middleware.GlobalExceptionHandler.Invoke(HttpContext httpContext) in C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)\Middleware\GlobalExceptionHandler.cs:line 20
+2025-04-23 22:24:22.390 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7038/api/auth/register?UserName=UesliLaska&Email=uesli.laska%40gmail.com&Password=Uesliislaska123 - 500 null application/json; charset=utf-8 208.9115ms
+2025-04-23 22:26:34.405 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/index.html - null null
+2025-04-23 22:26:34.418 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/index.html - 200 null text/html;charset=utf-8 12.8799ms
+2025-04-23 22:26:34.460 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-23 22:26:34.460 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-04-23 22:26:34.467 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 6.9683ms

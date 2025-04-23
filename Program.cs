@@ -6,6 +6,10 @@ using Serilog;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using IMS_InventoryManagmentSystem_.Service.IService;
+using IMS_InventoryManagmentSystem_.Service;
+using IMS_InventoryManagmentSystem_.Repositories.InterfaceRepo;
+using IMS_InventoryManagmentSystem_.Repositories;
 
 namespace IMS_InventoryManagmentSystem_
 {
@@ -31,7 +35,8 @@ namespace IMS_InventoryManagmentSystem_
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+            builder.Services.AddScoped<UserRepository>();
+            builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
