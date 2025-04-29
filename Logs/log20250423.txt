@@ -217,3 +217,57 @@ System.InvalidOperationException: Unable to resolve service for type 'IMS_Invent
 2025-04-23 22:26:34.460 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
 2025-04-23 22:26:34.460 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
 2025-04-23 22:26:34.467 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 6.9683ms
+2025-04-23 22:31:17.179 +02:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-23 22:31:17.605 +02:00 [INF] Now listening on: https://localhost:7038
+2025-04-23 22:31:17.607 +02:00 [INF] Now listening on: http://localhost:5017
+2025-04-23 22:31:17.756 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-23 22:31:17.757 +02:00 [INF] Hosting environment: Development
+2025-04-23 22:31:17.759 +02:00 [INF] Content root path: C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)
+2025-04-23 22:31:18.023 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/index.html - null null
+2025-04-23 22:31:18.300 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/index.html - 200 null text/html;charset=utf-8 285.7719ms
+2025-04-23 22:31:18.320 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-23 22:31:18.332 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 12.6603ms
+2025-04-23 22:31:18.361 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-04-23 22:31:18.401 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.9711ms
+2025-04-23 22:31:18.537 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - null null
+2025-04-23 22:31:18.550 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.344ms
+2025-04-23 22:31:39.529 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7038/api/auth/register?UserName=UesliLaska&Email=uesli.laska%40gmail.com&Password=Uesliislaska123 - null 0
+2025-04-23 22:31:39.545 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem))'
+2025-04-23 22:31:39.571 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IMS_InventoryManagmentSystem_.Models.DTO.UserDTO]] Register(IMS_InventoryManagmentSystem_.Models.DTO.RegisterDTO) on controller IMS_InventoryManagmentSystem_.Controllers.AuthController (IMS(InventoryManagmentSystem)).
+2025-04-23 22:31:48.823 +02:00 [INF] Executed DbCommand (96ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0
+2025-04-23 22:31:52.998 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [User] ([Email], [PasswordHash], [Role], [UserName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-04-23 22:32:03.850 +02:00 [INF] Executing OkObjectResult, writing value of type 'IMS_InventoryManagmentSystem_.Models.DTO.AuthDto'.
+2025-04-23 22:32:09.890 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem)) in 30308.3612ms
+2025-04-23 22:32:09.892 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Register (IMS(InventoryManagmentSystem))'
+2025-04-23 22:32:12.876 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7038/api/auth/register?UserName=UesliLaska&Email=uesli.laska%40gmail.com&Password=Uesliislaska123 - 200 null application/json; charset=utf-8 33347.2375ms
+2025-04-23 22:32:55.813 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7038/api/auth/login?UserName=UesliLaska&Email=uesli.laska%40gmail.com&Password=Uesliislaska123 - null 0
+2025-04-23 22:32:58.589 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Login (IMS(InventoryManagmentSystem))'
+2025-04-23 22:32:58.595 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(IMS_InventoryManagmentSystem_.Models.DTO.LoginDto) on controller IMS_InventoryManagmentSystem_.Controllers.AuthController (IMS(InventoryManagmentSystem)).
+2025-04-23 22:32:58.706 +02:00 [INF] Executed DbCommand (92ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0
+2025-04-23 22:32:58.711 +02:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult'.
+2025-04-23 22:32:58.725 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.AuthController.Login (IMS(InventoryManagmentSystem)) in 126.848ms
+2025-04-23 22:32:58.728 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Login (IMS(InventoryManagmentSystem))'
+2025-04-23 22:32:59.325 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7038/api/auth/login?UserName=UesliLaska&Email=uesli.laska%40gmail.com&Password=Uesliislaska123 - 200 null application/json; charset=utf-8 3512.3131ms
+2025-04-23 22:33:23.168 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7038/api/auth/login?UserName=UesliLaska&Email=uesli.laska%40gmail.com&Password=Uesliislaska123 - null 0
+2025-04-23 22:33:23.176 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Login (IMS(InventoryManagmentSystem))'
+2025-04-23 22:33:23.178 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(IMS_InventoryManagmentSystem_.Models.DTO.LoginDto) on controller IMS_InventoryManagmentSystem_.Controllers.AuthController (IMS(InventoryManagmentSystem)).
+2025-04-23 22:33:23.240 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0
+2025-04-23 22:33:23.244 +02:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult'.
+2025-04-23 22:33:23.245 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.AuthController.Login (IMS(InventoryManagmentSystem)) in 64.4649ms
+2025-04-23 22:33:23.247 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.AuthController.Login (IMS(InventoryManagmentSystem))'
+2025-04-23 22:33:23.248 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7038/api/auth/login?UserName=UesliLaska&Email=uesli.laska%40gmail.com&Password=Uesliislaska123 - 200 null application/json; charset=utf-8 80.4972ms
+2025-04-23 22:33:23.861 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7038/api/auth/login?UserName=UesliLaska&Email=uesli.laska%40gmail.com&Password=Uesliislaska123 - null 0

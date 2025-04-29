@@ -3,6 +3,7 @@ using IMS_InventoryManagmentSystem_.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IMS_InventoryManagmentSystem_.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250429212019__addProductRelation")]
+    partial class _addProductRelation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,32 +48,6 @@ namespace IMS_InventoryManagmentSystem_.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("IMS_InventoryManagmentSystem_.Models.ProductWareHouse", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WareHouseId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("productId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("WareHouseId");
-
-                    b.HasIndex("productId");
-
-                    b.ToTable("ProductWareHouse");
                 });
 
             modelBuilder.Entity("IMS_InventoryManagmentSystem_.Models.User", b =>
@@ -121,25 +98,6 @@ namespace IMS_InventoryManagmentSystem_.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("WareHouse");
-                });
-
-            modelBuilder.Entity("IMS_InventoryManagmentSystem_.Models.ProductWareHouse", b =>
-                {
-                    b.HasOne("IMS_InventoryManagmentSystem_.Models.WareHouse", "WareHouse")
-                        .WithMany()
-                        .HasForeignKey("WareHouseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("IMS_InventoryManagmentSystem_.Models.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("productId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-
-                    b.Navigation("WareHouse");
                 });
 #pragma warning restore 612, 618
         }

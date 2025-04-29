@@ -16,5 +16,7 @@ namespace IMS_InventoryManagmentSystem_.Data
         public DbSet<Product> Products { get; set; }
 
         public DbSet<WareHouse> WareHouse { get; set; }
+        
+        public DbSet<ProductWareHouse> ProductWareHouse { get; set; }
     }
 }

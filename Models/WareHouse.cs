@@ -7,5 +7,7 @@
         public required string Name { get; set; }
         public required string Location { get; set; } 
 
+        ICollection<ProductWareHouse> ProductWareHouses { get; set; }
+
     }
 }
