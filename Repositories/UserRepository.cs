@@ -56,15 +56,15 @@ namespace IMS_InventoryManagmentSystem_.Repositories
 
         public async  Task UpdateUserAsync(User user)
         {
-            var userTobeUpdated = await _dbContext.User.FindAsync(user);
-            if (userTobeUpdated != null) {
-                _dbContext.User.Update(user);
-                await _dbContext.SaveChangesAsync();
-            }
-            else
-            {
-                Log.Error("User to be Updated is Not Found");
-            }
+                var userTobeUpdated = await _dbContext.User.FindAsync(user);
+                if (userTobeUpdated != null) {
+                    _dbContext.User.Update(user);
+                    await _dbContext.SaveChangesAsync();
+                }
+                else
+                {
+                    Log.Error("User to be Updated is Not Found");
+                }
 
         }
     }
