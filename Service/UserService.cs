@@ -1,6 +1,7 @@
 ﻿using IMS_InventoryManagmentSystem_.Models;
 using IMS_InventoryManagmentSystem_.Models.DTO;
 using IMS_InventoryManagmentSystem_.Repositories;
+using IMS_InventoryManagmentSystem_.Repositories.InterfaceRepo;
 using IMS_InventoryManagmentSystem_.Service.IService;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -14,10 +15,10 @@ namespace IMS_InventoryManagmentSystem_.Service
     public class UserService : IUserService
     {
 
-        public readonly UserRepository _repository;
+        public readonly IUserRepository _repository;
         public readonly ILogger<UserService> _logger;
         private readonly IConfiguration _configuration;
-        public UserService(UserRepository repository, ILogger<UserService> logger,IConfiguration configuration)
+        public UserService(IUserRepository repository, ILogger<UserService> logger,IConfiguration configuration)
         {
             _repository = repository;
             _logger = logger;

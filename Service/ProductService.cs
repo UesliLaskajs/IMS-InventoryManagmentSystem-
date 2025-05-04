@@ -44,19 +44,17 @@ namespace IMS_InventoryManagmentSystem_.Service
 
         public async Task DeleteProductAsync(int productId)
         {
-            if (productId == 0)
-            {
-                throw new ArgumentException("Invalid Id");
-            }
+            if (productId <= 0)
+                throw new ArgumentException("Invalid product ID.");
 
-            var productDeletion=_productRepo.GetProductAsync(productId);
-            if (productDeletion == null)
+            var product = await _productRepo.GetProductAsync(productId);
+            if (product == null)
             {
                 _logger.LogWarning($"Product with ID {productId} not found for deletion.");
                 throw new KeyNotFoundException($"Product with ID {productId} not found.");
             }
 
-            await _productRepo.DeleteProductAsync(productDeletion);
+            await _productRepo.DeleteProductAsync(product);
         }
 
         public async Task<IEnumerable<Product>> GetAllProductsAsync()
