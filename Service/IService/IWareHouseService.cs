@@ -11,7 +11,7 @@ namespace IMS_InventoryManagmentSystem_.Service.IService
         Task<WareHouse> AddWareHouseAsync(WareHouse Warehouse);
 
         Task<WareHouse > UpdateWarehouseAsync(WareHouse wareHouse);
-        Task DeleteWarehouseAsync(WareHouse warehouse);
+        Task DeleteWarehouseAsync(int id);
 
         Task SaveChanges();
     }

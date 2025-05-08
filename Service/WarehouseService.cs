@@ -34,14 +34,14 @@ namespace IMS_InventoryManagmentSystem_.Service
             return await _warehouseService.AddWareHouseAsync(warehouse);
         }
 
-        public async Task DeleteWarehouseAsync(WareHouse warehouse)
+        public async Task DeleteWarehouseAsync(int id)
         {
-            if (warehouse.Id == 0) {
+            if (id == 0) {
                 throw new ArgumentException("Invalid Warehouse id");
             }
-            var wareHouse=await _warehouseService.GetWareHouseAsync(warehouse.Id);
+            var wareHouse=await _warehouseService.GetWareHouseAsync(id);
             if (wareHouse == null) {
-                _logger.LogWarning($"Warehouse with ID {wareHouse.Id} not found for deletion.");
+                _logger.LogWarning($"Warehouse with ID {id} not found for deletion.");
                 throw new KeyNotFoundException("Warehouse with ID {ware} not found.");
             }
         }
