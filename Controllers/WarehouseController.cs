@@ -51,7 +51,7 @@ namespace IMS_InventoryManagmentSystem_.Controllers
             try
             {
                 var wareHouseAdded = await _warehouseService.AddWareHouseAsync(wareHouse);
-                return CreatedAtAction(nameof(wareHouseAdded), new { id = wareHouseAdded.Id }, wareHouseAdded);
+                return CreatedAtAction(nameof(GetWareHouse), new { id = wareHouseAdded.Id }, wareHouseAdded);
             }
             catch (ArgumentException ex) {
 

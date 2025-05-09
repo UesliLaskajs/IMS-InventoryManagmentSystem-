@@ -139,5 +139,84 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IMS_InventoryManagmentSystem_.Controllers.WarehouseController",
+    "Method": "GetallWarehouses",
+    "RelativePath": "api/Warehouse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IMS_InventoryManagmentSystem_.Controllers.WarehouseController",
+    "Method": "AddWarehouse",
+    "RelativePath": "api/Warehouse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wareHouse",
+        "Type": "IMS_InventoryManagmentSystem_.Models.WareHouse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IMS_InventoryManagmentSystem_.Controllers.WarehouseController",
+    "Method": "UpdateWarehouse",
+    "RelativePath": "api/Warehouse",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "wareHouse",
+        "Type": "IMS_InventoryManagmentSystem_.Models.WareHouse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IMS_InventoryManagmentSystem_.Controllers.WarehouseController",
+    "Method": "GetWareHouse",
+    "RelativePath": "api/Warehouse/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IMS_InventoryManagmentSystem_.Controllers.WarehouseController",
+    "Method": "DeleteWareHouse",
+    "RelativePath": "api/Warehouse/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

@@ -39,6 +39,8 @@ namespace IMS_InventoryManagmentSystem_
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IProductRepo, ProductRepository>();
+            builder.Services.AddScoped<IWareHouseRepository, WarehouseRepository>();
+            builder.Services.AddScoped<IWareHouseService, WarehouseService>();
 
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>

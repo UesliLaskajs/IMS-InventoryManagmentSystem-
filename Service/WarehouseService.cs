@@ -6,12 +6,12 @@ namespace IMS_InventoryManagmentSystem_.Service
 {
     public class WarehouseService : IWareHouseService
     {
-        private readonly IWareHouseService _warehouseService;
+        private readonly IWareHouseRepository _wareHouseRepository;
         private readonly ILogger<WarehouseService> _logger;
-        public WarehouseService(IWareHouseService wareHouseService,ILogger<WarehouseService> logger)
+        public WarehouseService(IWareHouseRepository wareHouseRepository, ILogger<WarehouseService> logger)
         {
              _logger = logger;
-            _warehouseService = wareHouseService;
+            _wareHouseRepository = wareHouseRepository;
         }
         public async Task<WareHouse> AddWareHouseAsync(WareHouse warehouse)
         {
@@ -24,14 +24,14 @@ namespace IMS_InventoryManagmentSystem_.Service
             {
                 throw new ArgumentException("Name Must not be Empty"); 
             }
-            var existingWarehouses = await _warehouseService.GetAllWareHouseAsync();
+            var existingWarehouses = await _wareHouseRepository.GetAllWareHouseAsync();
             if (existingWarehouses.Any(w => w.Name.Equals(warehouse.Name, StringComparison.OrdinalIgnoreCase)))
             {
                 throw new InvalidOperationException("A Warehouse with this name already exists.");
             }
 
             // Now add the warehouse using the repository or service layer, depending on your design.
-            return await _warehouseService.AddWareHouseAsync(warehouse);
+            return await _wareHouseRepository.AddWarehoues(warehouse);
         }
 
         public async Task DeleteWarehouseAsync(int id)
@@ -39,7 +39,7 @@ namespace IMS_InventoryManagmentSystem_.Service
             if (id == 0) {
                 throw new ArgumentException("Invalid Warehouse id");
             }
-            var wareHouse=await _warehouseService.GetWareHouseAsync(id);
+            var wareHouse=await _wareHouseRepository.GetWareHouseAsync(id);
             if (wareHouse == null) {
                 _logger.LogWarning($"Warehouse with ID {id} not found for deletion.");
                 throw new KeyNotFoundException("Warehouse with ID {ware} not found.");
@@ -48,7 +48,7 @@ namespace IMS_InventoryManagmentSystem_.Service
 
         public async Task<IEnumerable<WareHouse>> GetAllWareHouseAsync()
         {
-           var warhouses= await _warehouseService.GetAllWareHouseAsync();
+           var warhouses= await _wareHouseRepository.GetAllWareHouseAsync();
             if (!warhouses.Any())
             {
                  _logger.LogError("Error No Warheouses Found");
@@ -62,7 +62,7 @@ namespace IMS_InventoryManagmentSystem_.Service
             if (id == 0) {
                 throw new ArgumentException("Id not found");
             }
-            var warehouse = await _warehouseService.GetWareHouseAsync(id);
+            var warehouse = await _wareHouseRepository.GetWareHouseAsync(id);
             if (warehouse == null)
             {
                 _logger.LogError($"Warehouse with {id} not found");
@@ -73,7 +73,7 @@ namespace IMS_InventoryManagmentSystem_.Service
 
         public Task SaveChanges()
         {
-           return _warehouseService.SaveChanges();
+           return _wareHouseRepository.SaveChangesAsync();
         }
 
         public async Task<WareHouse> UpdateWarehouseAsync(WareHouse wareHouse)
@@ -87,14 +87,14 @@ namespace IMS_InventoryManagmentSystem_.Service
             if (string.IsNullOrWhiteSpace(wareHouse.Name))
                 throw new ArgumentException("wareHouse name cannot be empty.");
 
-            var existingwareHouse = await _warehouseService.GetWareHouseAsync(wareHouse.Id);
+            var existingwareHouse = await _wareHouseRepository.GetWareHouseAsync(wareHouse.Id);
             if (existingwareHouse == null)
             {
                 _logger.LogWarning($"Product with ID {wareHouse.Id} not found for update.");
                 throw new KeyNotFoundException($"Product with ID {wareHouse.Id} not found.");
             }
 
-            return await _warehouseService.UpdateWarehouseAsync(wareHouse);
+            return await _wareHouseRepository.UpdateWareHouse(wareHouse);
         }
     }
 }

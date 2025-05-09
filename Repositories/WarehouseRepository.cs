@@ -1,4 +1,5 @@
-﻿using IMS_InventoryManagmentSystem_.Models;
+﻿using IMS_InventoryManagmentSystem_.Data;
+using IMS_InventoryManagmentSystem_.Models;
 using IMS_InventoryManagmentSystem_.Repositories.InterfaceRepo;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -7,10 +8,10 @@ namespace IMS_InventoryManagmentSystem_.Repositories
 {
     public class WarehouseRepository : IWareHouseRepository
     {
-        private readonly DbContext _dbContext;
+        private readonly ApplicationDbContext _dbContext;
         private readonly ILogger<WarehouseRepository> _logger;
 
-        public WarehouseRepository(DbContext dbContext, ILogger<WarehouseRepository> logger)
+        public WarehouseRepository(ApplicationDbContext dbContext, ILogger<WarehouseRepository> logger)
         {
             _dbContext = dbContext;
             _logger = logger;
