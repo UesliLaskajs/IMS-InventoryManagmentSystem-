@@ -58,17 +58,23 @@ public class ProductRepository : IProductRepo
     public async Task<Product> UpdateProductAsync(Product product)
     {
         var existingProduct = await _context.Products.FindAsync(product.Id);
-        if (existingProduct != null)
+
+        if (existingProduct == null)
         {
-            _context.Products.Update(product);
-            await _context.SaveChangesAsync();
-            return product;
+            _logger.LogError($"Product with ID {product.Id} not found.");
+            return null; // Or throw an exception if needed
         }
-        else
-        {
-            _logger.LogError("Product to be Updated is Not Found");
-            return null;
-        }
+
+        // Map updated values from the incoming product to the existing one
+        existingProduct.Name = product.Name; // example property
+        existingProduct.Price = product.Price; // example property
+                                               // ... map all other properties as needed
+
+        // You can use Entity Framework to track changes and automatically handle the update
+        _context.Products.Update(existingProduct); // Make sure you're updating the tracked entity
+        await _context.SaveChangesAsync();
+
+        return existingProduct; // Returning the updated entity
     }
 }
     

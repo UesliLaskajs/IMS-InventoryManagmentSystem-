@@ -54,11 +54,11 @@ namespace IMS_InventoryManagmentSystem_.Controllers
                 return CreatedAtAction(nameof(GetProductById), new { id = productAdded.Id }, productAdded);
 
             }
-            catch(ArgumentException ex) 
+            catch (ArgumentException ex)
             {
-                return BadRequest(new {error=ex.Message});
+                return BadRequest(new { error = ex.Message });
             }
-            catch(InvalidOperationException ex)
+            catch (InvalidOperationException ex)
             {
                 return Conflict(new { error = ex.Message });
             }
@@ -66,13 +66,9 @@ namespace IMS_InventoryManagmentSystem_.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateProduct(int id, [FromBody] Product product)
+        public async Task<IActionResult> UpdateProduct( [FromBody] Product product)
         {
-
-            if(id!=product.Id)
-            {
-                return BadRequest("Id Missmatch");
-            }
+    
             try
             {
                 var productToBeUpdated = await _productService.UpdateProductAsync(product);
