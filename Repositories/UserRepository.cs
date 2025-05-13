@@ -54,18 +54,21 @@ namespace IMS_InventoryManagmentSystem_.Repositories
             await _dbContext.SaveChangesAsync();
         }
 
-        public async  Task UpdateUserAsync(User user)
+        public async Task UpdateUserAsync(User user)
         {
-                var userTobeUpdated = await _dbContext.User.FindAsync(user);
-                if (userTobeUpdated != null) {
-                    _dbContext.User.Update(user);
-                    await _dbContext.SaveChangesAsync();
-                }
-                else
-                {
-                    Log.Error("User to be Updated is Not Found");
-                }
+            var userTobeUpdated = await _dbContext.User.FindAsync(user.Id);
+            if (userTobeUpdated != null)
+            {
+                userTobeUpdated.UserName = user.UserName;
+                userTobeUpdated.Email = user.Email;
+                userTobeUpdated.PasswordHash = user.PasswordHash;
 
+                await _dbContext.SaveChangesAsync();
+            }
+            else
+            {
+                Log.Error("User to be updated was not found. UserId: {UserId}", user.Id);
+            }
         }
     }
 }

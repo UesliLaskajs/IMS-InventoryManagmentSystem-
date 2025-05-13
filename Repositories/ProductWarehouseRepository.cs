@@ -18,8 +18,11 @@ namespace IMS_InventoryManagmentSystem_.Repositories
         }
         public async Task AddOrUpdateAsync(int warehouseId, int productId, int quantity)
         {
-            var existingProductWarehouse = _context.ProductWareHouse.FirstOrDefault(pw=>pw.Id==warehouseId && pw.productId==productId);
-            if (existingProductWarehouse != null) {
+            var existingProductWarehouse = await _context.ProductWareHouse
+                .FirstOrDefaultAsync(pw => pw.WareHouseId == warehouseId && pw.productId == productId);
+
+            if (existingProductWarehouse != null)
+            {
                 existingProductWarehouse.Quantity = quantity;
             }
             else
@@ -32,7 +35,8 @@ namespace IMS_InventoryManagmentSystem_.Repositories
                 };
                 await _context.ProductWareHouse.AddAsync(newEntry);
             }
-            _context.SaveChangesAsync();
+
+            await _context.SaveChangesAsync(); // Properly awaited
         }
 
 
