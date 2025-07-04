@@ -1,0 +1,201 @@
+2025-05-18 23:21:16.817 +02:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-18 23:21:17.297 +02:00 [INF] Now listening on: https://localhost:7038
+2025-05-18 23:21:17.299 +02:00 [INF] Now listening on: http://localhost:5017
+2025-05-18 23:21:17.559 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-18 23:21:17.560 +02:00 [INF] Hosting environment: Development
+2025-05-18 23:21:17.561 +02:00 [INF] Content root path: C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)
+2025-05-18 23:21:20.391 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger - null null
+2025-05-18 23:21:20.675 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger - 301 0 null 290.9676ms
+2025-05-18 23:21:20.681 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/index.html - null null
+2025-05-18 23:21:20.772 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/index.html - 200 null text/html;charset=utf-8 90.2492ms
+2025-05-18 23:21:20.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/swagger-ui.css - null null
+2025-05-18 23:21:20.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/swagger-ui-bundle.js - null null
+2025-05-18 23:21:20.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-18 23:21:20.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-18 23:21:20.817 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 23.9542ms
+2025-05-18 23:21:20.853 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-05-18 23:21:20.870 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-18 23:21:20.905 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 34.7106ms
+2025-05-18 23:21:20.920 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-18 23:21:20.920 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-18 23:21:20.924 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/swagger-ui.css - 200 152034 text/css 131.8151ms
+2025-05-18 23:21:20.925 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 131.7372ms
+2025-05-18 23:21:20.954 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-18 23:21:20.956 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 162.8509ms
+2025-05-18 23:21:20.996 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_vs/browserLink - 200 null text/javascript; charset=UTF-8 143.5626ms
+2025-05-18 23:21:21.119 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/swagger-ui-bundle.js - null null
+2025-05-18 23:21:21.119 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-18 23:21:21.119 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-05-18 23:21:21.129 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-18 23:21:21.137 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 18.201ms
+2025-05-18 23:21:21.140 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-18 23:21:21.142 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.9265ms
+2025-05-18 23:21:21.147 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 28.7978ms
+2025-05-18 23:21:21.337 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - null null
+2025-05-18 23:21:21.365 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.8221ms
+2025-05-18 23:21:21.389 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/favicon-32x32.png - null null
+2025-05-18 23:21:21.410 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-05-18 23:21:21.415 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/favicon-32x32.png - 200 628 image/png 26.7801ms
+2025-05-18 23:25:06.914 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/api/ProductWarehouse/1 - null null
+2025-05-18 23:25:06.939 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:25:06.970 +02:00 [INF] Route matched with {action = "GetProductWareHouse", controller = "ProductWarehouse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductWareHouse(Int32) on controller IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController (IMS(InventoryManagmentSystem)).
+2025-05-18 23:25:08.772 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[@__warehouseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Quantity], [p].[WareHouseId], [p].[productId], [p0].[Id], [p0].[Barcode], [p0].[Name], [p0].[Price], [p0].[Sku]
+FROM [ProductWareHouse] AS [p]
+INNER JOIN [Products] AS [p0] ON [p].[productId] = [p0].[Id]
+WHERE [p].[WareHouseId] = @__warehouseId_0
+2025-05-18 23:25:08.883 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType4`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], IMS(InventoryManagmentSystem), Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-18 23:25:08.899 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem)) in 1922.4086ms
+2025-05-18 23:25:08.903 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:25:08.911 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/api/ProductWarehouse/1 - 200 null application/json; charset=utf-8 1996.5101ms
+2025-05-18 23:25:22.075 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/api/ProductWarehouse/2 - null null
+2025-05-18 23:25:22.087 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:25:22.091 +02:00 [INF] Route matched with {action = "GetProductWareHouse", controller = "ProductWarehouse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductWareHouse(Int32) on controller IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController (IMS(InventoryManagmentSystem)).
+2025-05-18 23:25:22.138 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__warehouseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Quantity], [p].[WareHouseId], [p].[productId], [p0].[Id], [p0].[Barcode], [p0].[Name], [p0].[Price], [p0].[Sku]
+FROM [ProductWareHouse] AS [p]
+INNER JOIN [Products] AS [p0] ON [p].[productId] = [p0].[Id]
+WHERE [p].[WareHouseId] = @__warehouseId_0
+2025-05-18 23:25:22.142 +02:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-18 23:25:22.146 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem)) in 52.9328ms
+2025-05-18 23:25:22.149 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:25:22.150 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/api/ProductWarehouse/2 - 404 null application/json; charset=utf-8 75.5216ms
+2025-05-18 23:25:27.005 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/api/ProductWarehouse/3 - null null
+2025-05-18 23:25:27.009 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:25:27.010 +02:00 [INF] Route matched with {action = "GetProductWareHouse", controller = "ProductWarehouse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductWareHouse(Int32) on controller IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController (IMS(InventoryManagmentSystem)).
+2025-05-18 23:25:27.076 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__warehouseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Quantity], [p].[WareHouseId], [p].[productId], [p0].[Id], [p0].[Barcode], [p0].[Name], [p0].[Price], [p0].[Sku]
+FROM [ProductWareHouse] AS [p]
+INNER JOIN [Products] AS [p0] ON [p].[productId] = [p0].[Id]
+WHERE [p].[WareHouseId] = @__warehouseId_0
+2025-05-18 23:25:27.080 +02:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-18 23:25:27.083 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem)) in 70.0413ms
+2025-05-18 23:25:27.084 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:25:27.086 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/api/ProductWarehouse/3 - 404 null application/json; charset=utf-8 80.4721ms
+2025-05-18 23:25:29.898 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/api/ProductWarehouse/1 - null null
+2025-05-18 23:25:29.901 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:25:29.903 +02:00 [INF] Route matched with {action = "GetProductWareHouse", controller = "ProductWarehouse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductWareHouse(Int32) on controller IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController (IMS(InventoryManagmentSystem)).
+2025-05-18 23:25:29.918 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__warehouseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Quantity], [p].[WareHouseId], [p].[productId], [p0].[Id], [p0].[Barcode], [p0].[Name], [p0].[Price], [p0].[Sku]
+FROM [ProductWareHouse] AS [p]
+INNER JOIN [Products] AS [p0] ON [p].[productId] = [p0].[Id]
+WHERE [p].[WareHouseId] = @__warehouseId_0
+2025-05-18 23:25:29.922 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType4`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], IMS(InventoryManagmentSystem), Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-18 23:25:29.925 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem)) in 10.8487ms
+2025-05-18 23:25:29.927 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:25:29.928 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/api/ProductWarehouse/1 - 200 null application/json; charset=utf-8 30.1302ms
+2025-05-18 23:28:05.323 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7038/api/ProductWarehouse/update?warehouseId=3&productId=1&quantity=12 - null 0
+2025-05-18 23:28:05.328 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.UpdateOrAddProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:28:05.333 +02:00 [INF] Route matched with {action = "UpdateOrAddProductWareHouse", controller = "ProductWarehouse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOrAddProductWareHouse(Int32, Int32, Int32) on controller IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController (IMS(InventoryManagmentSystem)).
+2025-05-18 23:28:20.683 +02:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-18 23:28:21.192 +02:00 [INF] Now listening on: https://localhost:7038
+2025-05-18 23:28:21.194 +02:00 [INF] Now listening on: http://localhost:5017
+2025-05-18 23:28:21.406 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-18 23:28:21.407 +02:00 [INF] Hosting environment: Development
+2025-05-18 23:28:21.408 +02:00 [INF] Content root path: C:\Users\User\source\repos\IMS(InventoryManagmentSystem)\IMS(InventoryManagmentSystem)
+2025-05-18 23:28:22.043 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/index.html - null null
+2025-05-18 23:28:22.349 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/index.html - 200 null text/html;charset=utf-8 310.8786ms
+2025-05-18 23:28:22.427 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-05-18 23:28:22.427 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-18 23:28:22.448 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 21.1125ms
+2025-05-18 23:28:22.477 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.5158ms
+2025-05-18 23:28:22.733 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - null null
+2025-05-18 23:28:22.758 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.1692ms
+2025-05-18 23:28:24.259 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-18 23:28:24.259 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-05-18 23:28:24.264 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 4.1615ms
+2025-05-18 23:28:24.281 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.248ms
+2025-05-18 23:28:50.578 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7038/api/ProductWarehouse/update?warehouseId=3&productId=1&quantity=13 - null 0
+2025-05-18 23:28:50.593 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.UpdateOrAddProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:28:50.624 +02:00 [INF] Route matched with {action = "UpdateOrAddProductWareHouse", controller = "ProductWarehouse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOrAddProductWareHouse(Int32, Int32, Int32) on controller IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController (IMS(InventoryManagmentSystem)).
+2025-05-18 23:28:52.099 +02:00 [INF] Executed DbCommand (46ms) [Parameters=[@__warehouseId_0='?' (DbType = Int32), @__productId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Quantity], [p].[WareHouseId], [p].[productId]
+FROM [ProductWareHouse] AS [p]
+WHERE [p].[WareHouseId] = @__warehouseId_0 AND [p].[productId] = @__productId_1
+2025-05-18 23:28:52.285 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductWareHouse] ([Quantity], [WareHouseId], [productId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-18 23:28:52.336 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-18 23:28:52.350 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.UpdateOrAddProductWareHouse (IMS(InventoryManagmentSystem)) in 1719.8006ms
+2025-05-18 23:28:52.353 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.UpdateOrAddProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:28:52.363 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7038/api/ProductWarehouse/update?warehouseId=3&productId=1&quantity=13 - 200 null application/json; charset=utf-8 1785.1621ms
+2025-05-18 23:29:56.828 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/index.html - null null
+2025-05-18 23:29:56.839 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/index.html - 200 null text/html;charset=utf-8 11.0116ms
+2025-05-18 23:29:56.869 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-05-18 23:29:56.869 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-18 23:29:56.884 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 15.0611ms
+2025-05-18 23:29:56.888 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.8463ms
+2025-05-18 23:29:56.891 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-18 23:29:56.892 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/_vs/browserLink - null null
+2025-05-18 23:29:56.897 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_framework/aspnetcore-browser-refresh.js - 200 13810 application/javascript; charset=utf-8 6.3741ms
+2025-05-18 23:29:56.905 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.2441ms
+2025-05-18 23:29:57.176 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - null null
+2025-05-18 23:29:57.194 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.7317ms
+2025-05-18 23:30:13.792 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/api/ProductWarehouse/1 - null null
+2025-05-18 23:30:13.797 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:30:13.803 +02:00 [INF] Route matched with {action = "GetProductWareHouse", controller = "ProductWarehouse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductWareHouse(Int32) on controller IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController (IMS(InventoryManagmentSystem)).
+2025-05-18 23:30:13.885 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__warehouseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Quantity], [p].[WareHouseId], [p].[productId], [p0].[Id], [p0].[Barcode], [p0].[Name], [p0].[Price], [p0].[Sku]
+FROM [ProductWareHouse] AS [p]
+INNER JOIN [Products] AS [p0] ON [p].[productId] = [p0].[Id]
+WHERE [p].[WareHouseId] = @__warehouseId_0
+2025-05-18 23:30:13.910 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType4`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], IMS(InventoryManagmentSystem), Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-18 23:30:13.918 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem)) in 112.5042ms
+2025-05-18 23:30:13.921 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:30:13.923 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/api/ProductWarehouse/1 - 200 null application/json; charset=utf-8 130.5241ms
+2025-05-18 23:30:17.761 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/api/ProductWarehouse/2 - null null
+2025-05-18 23:30:17.765 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:30:17.767 +02:00 [INF] Route matched with {action = "GetProductWareHouse", controller = "ProductWarehouse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductWareHouse(Int32) on controller IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController (IMS(InventoryManagmentSystem)).
+2025-05-18 23:30:17.835 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__warehouseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Quantity], [p].[WareHouseId], [p].[productId], [p0].[Id], [p0].[Barcode], [p0].[Name], [p0].[Price], [p0].[Sku]
+FROM [ProductWareHouse] AS [p]
+INNER JOIN [Products] AS [p0] ON [p].[productId] = [p0].[Id]
+WHERE [p].[WareHouseId] = @__warehouseId_0
+2025-05-18 23:30:17.839 +02:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-18 23:30:17.842 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem)) in 73.4014ms
+2025-05-18 23:30:17.844 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:30:17.846 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/api/ProductWarehouse/2 - 404 null application/json; charset=utf-8 84.7412ms
+2025-05-18 23:30:22.049 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/api/ProductWarehouse/3 - null null
+2025-05-18 23:30:22.053 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:30:22.055 +02:00 [INF] Route matched with {action = "GetProductWareHouse", controller = "ProductWarehouse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductWareHouse(Int32) on controller IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController (IMS(InventoryManagmentSystem)).
+2025-05-18 23:30:22.059 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__warehouseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Quantity], [p].[WareHouseId], [p].[productId], [p0].[Id], [p0].[Barcode], [p0].[Name], [p0].[Price], [p0].[Sku]
+FROM [ProductWareHouse] AS [p]
+INNER JOIN [Products] AS [p0] ON [p].[productId] = [p0].[Id]
+WHERE [p].[WareHouseId] = @__warehouseId_0
+2025-05-18 23:30:22.063 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType4`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], IMS(InventoryManagmentSystem), Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-18 23:30:22.065 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem)) in 7.7004ms
+2025-05-18 23:30:22.067 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:30:22.069 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/api/ProductWarehouse/3 - 200 null application/json; charset=utf-8 20.4662ms
+2025-05-18 23:31:36.508 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7038/api/ProductWarehouse/update?warehouseId=3&productId=1&quantity=17 - null 0
+2025-05-18 23:31:36.519 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.UpdateOrAddProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:31:36.521 +02:00 [INF] Route matched with {action = "UpdateOrAddProductWareHouse", controller = "ProductWarehouse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOrAddProductWareHouse(Int32, Int32, Int32) on controller IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController (IMS(InventoryManagmentSystem)).
+2025-05-18 23:31:36.528 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__warehouseId_0='?' (DbType = Int32), @__productId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Quantity], [p].[WareHouseId], [p].[productId]
+FROM [ProductWareHouse] AS [p]
+WHERE [p].[WareHouseId] = @__warehouseId_0 AND [p].[productId] = @__productId_1
+2025-05-18 23:31:36.539 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [ProductWareHouse] SET [Quantity] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-05-18 23:31:36.545 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-18 23:31:36.548 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.UpdateOrAddProductWareHouse (IMS(InventoryManagmentSystem)) in 22.9507ms
+2025-05-18 23:31:36.549 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.UpdateOrAddProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:31:36.550 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7038/api/ProductWarehouse/update?warehouseId=3&productId=1&quantity=17 - 200 null application/json; charset=utf-8 42.7525ms
+2025-05-18 23:31:44.786 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7038/api/ProductWarehouse/3 - null null
+2025-05-18 23:31:44.790 +02:00 [INF] Executing endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:31:44.791 +02:00 [INF] Route matched with {action = "GetProductWareHouse", controller = "ProductWarehouse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductWareHouse(Int32) on controller IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController (IMS(InventoryManagmentSystem)).
+2025-05-18 23:31:44.796 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__warehouseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Quantity], [p].[WareHouseId], [p].[productId], [p0].[Id], [p0].[Barcode], [p0].[Name], [p0].[Price], [p0].[Sku]
+FROM [ProductWareHouse] AS [p]
+INNER JOIN [Products] AS [p0] ON [p].[productId] = [p0].[Id]
+WHERE [p].[WareHouseId] = @__warehouseId_0
+2025-05-18 23:31:44.800 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType4`3[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], IMS(InventoryManagmentSystem), Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-18 23:31:44.803 +02:00 [INF] Executed action IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem)) in 8.7429ms
+2025-05-18 23:31:44.804 +02:00 [INF] Executed endpoint 'IMS_InventoryManagmentSystem_.Controllers.ProductWarehouseController.GetProductWareHouse (IMS(InventoryManagmentSystem))'
+2025-05-18 23:31:44.806 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7038/api/ProductWarehouse/3 - 200 null application/json; charset=utf-8 19.3905ms
